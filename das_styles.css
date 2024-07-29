@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#dashboard-container,
+#event-discussions {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allow vertical resizing for textareas */
+}
+
+button {
+  width: 84%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#events-list {
+  width: 100%;
+}
+
+#events-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#events-list li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#event-discussions input,
+#event-discussions button {
+  width: 80%;
+}
+
+#discussion-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#discussion-list li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  #dashboard-container,
+  #event-discussions {
+    width: 90%;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 90%;
+  }
+
+  #event-discussions input,
+  #event-discussions button,
+  #discussion-list {
+    width: 90%;
+  }
+}
